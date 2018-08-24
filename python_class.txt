@@ -1,0 +1,15 @@
+1.class Car():
+	def __init__(self, make, model, year):
+		self.make = make
+		...
+		self.odometer_reading = 0 	#初始值
+
+class ElectricCar(Car):    #继承，子类括号内包含父类的名字
+	def __init__(self, make, model, year)
+		"初始化父类的属性"
+		super().__init__(make, model, year)
+		self.battery_size = 70	#初始化父类属性后，再初始化子类属性
+	"重写父类的方法，在子类中重写一个与父类名字相同的方法即可"
+	"假设Car中有一个fill_gas_tank"
+	def fill_gas_tank():
+		print("电动车没有油箱！)
